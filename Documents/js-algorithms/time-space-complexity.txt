@@ -1,0 +1,62 @@
+Time and Space Complexity
+
+Time Complexity:
+  The amount of time taken by an algorithm to run, as a function of input size
+
+Space Complexity:
+  The amount of memory taken by an algorithm to run, as a function of input size
+  
+By evaluating against the input size, the analysis is machine independent and the comparison can be applied to multiple input sizes
+
+How do you represent complexity?
+  You do that using "asymptotic notations"
+  Asymptotic notations are mathematical tools to represent time and space complexity
+    Big-O Notation - worst case complexity
+    Omega Notation - best case complexity
+    Theta Notation = average case complexity
+    
+    We are primarily concerned with Big-O notation, since it represents the worst possible case scenario
+    
+*** Big-O Notation ***
+The worst case complexity of an algorithm is represented using the Big-O notation
+Big-O notation descr
+ibes the complexity of an algorithm using algebraic terms
+
+*big-O notation example with simple for loop
+function summation(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+ let sum = 0 ...runs 1 times
+ sum += i ...runs "n" number of times
+ return sum ...runs 1 times
+   ...n + 2 statements are ran in summmation(n);
+   
+because big-O notation looks at the big picture, it does not make sense to include the 2 in our example if n is equal to a large number such as 1000000.
+
+The function summation(n) has a big-O notation of O(n) - linear.  As the input size grows, the time complexity grows linearly.
+
+Another way of writing summation(n) would be as follows:
+  const summation = (n) => (n*(n+1))/2;
+
+This method of writing summation has a big-O of O(1) - constant
+
+If there are two nested loops, the time complexity is quadratic O(n**2)
+If there are three nested loops, the time complexity is cubic O(n**3)
+If the input size reduces by half every iteration, the time complexity is logarithmic O(logn)
+
+*** Space Complexity ***
+O(1) constant: the memory needed does not depend on the input size, and the algorithm does not require extra memory
+O(n) linear: the memory needed grows as the input size grows
+O(logn) logarithmic: the memory needed grows at a different rate than the input size
+  *quadratic space complexity is something that should be avoided if possible
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+OBJECTS BIG-O
+  insert: O(1) - constant
+  remove: O(1) - constant
+  access: O(1) - constant
+  search: O(n) - linear
+  
+  Linear time complexity Object static methods:
+    Object.keys(): returns an array of all the keys of an object
+    Object.values(): returns an array of all the values of an object
+    Object.entries(): returns an array of key/value pairs bundled into an array
+
+ARRAYS BIG-O:
+  The main difference between objects and arrays is that arrays are ordered, unlike objects
+  
+  insert/remove at end: O(1) - constant
+  insert/remove at beginning: O(n) - linear
+    This is because the index has to be reset for every remaining element after removing the element at index 0
+  access: O(1) - constant
+  search: O(n) - linear
+  
+  
+  Common Array.prototype methods
+    push/pop: O(1) - constant
+    shift/unshift/concat/slice/splice: O(n) - linear
+    forEach/map/filter/reduce: O(n) - linear
+    
+  
+

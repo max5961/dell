@@ -1,0 +1,44 @@
+TIME COMPLEXITY
+
+  terms:
+    O(1) - Constant
+    O(n) - Linear
+    O(n**2) - Quadratic
+    O(n**3) - Cubic
+    O(logn) - Logarithmic
+
+  O(1) - Constant
+    An example would be a function that simply returns a calculation, without running any other code.
+    It is called constant, because it simply the time complexity does not increase as the input size increases
+    
+  O(n) - Linear
+    As the input sizes increases, the time complexity increases linearly
+    Usually, an algorithm that contains a loop, has a time complexity of at least O(n)
+    "usually" because there are exceptions to this, but it is usually a safe bet
+  
+  O(n**2) - Quadratic
+    Two nested loops
+  
+  O(n**3) - Cubic
+    Three nested loops
+  
+  O(logn) - Logarithmic
+    Input size reduces by half every iteration
+    
+
+SPACE COMPLEXITY
+
+  O(1) - Constant
+    The algorithm does not need extra memory, or the memory needed does not depend on the input size
+  
+  O(n) - Linear
+    The extra memory needed grows linearly as the input size grows
+  
+  O(logn) - Logarithmic
+    The extra memory needed grows at a different rate than the input size
+  
+  These 3 space complexities are the most common.
+  Quadratic space complexity is something that should be avoided if possible
+  
+  
+  
